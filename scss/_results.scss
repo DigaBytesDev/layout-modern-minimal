@@ -1,0 +1,34 @@
+.results {
+  &__metrics {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 6rem;
+  }
+
+  &-metric {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    &__stat {
+      font-weight: $fw-bold;
+      font-size: 3rem;
+    }
+
+    &__label {
+      font-size: 1.125rem;
+    }
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .results {
+    &__metrics {
+      flex-direction: row;
+    }
+  }
+}

@@ -1,0 +1,69 @@
+.section-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 930px;
+  flex-direction: column;
+  gap: 0.625rem; // FOR MOBILE
+  //   border: 1px dashed black;
+}
+
+.content-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  //   border: 1px dashed blue;
+
+  &--vertical {
+    flex-direction: column;
+  }
+
+  &--horizontal {
+    align-items: center;
+    justify-content: center;
+  }
+
+  &--full {
+    max-width: 1120px;
+  }
+
+  &--half {
+    max-width: 500px;
+  }
+}
+
+.button-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 0.625rem;
+  gap: 0.5rem;
+}
+
+@media screen and (min-width: 1000px) {
+  .section-container {
+    &--horizontal {
+      flex-direction: row;
+      align-items: center;
+      gap: 4rem;
+    }
+
+    &--vertical {
+      gap: 3rem;
+    }
+  }
+
+  .content-container {
+    &--horizontal {
+      flex-direction: row; // DESKTOP ONLY
+      align-items: center;
+      justify-content: center;
+    }
+  }
+
+  .button-container {
+    flex-direction: row;
+    gap: 1rem;
+  }
+}

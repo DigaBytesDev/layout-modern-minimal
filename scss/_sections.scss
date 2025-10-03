@@ -1,0 +1,15 @@
+section {
+  width: clamp(375px, 100%, 1440px);
+  padding: 5rem 1.5rem; // FOR MOBILE
+  display: flex;
+  flex-direction: column;
+  gap: 0.625rem;
+  align-items: center;
+  // border: 1px solid black;
+}
+
+@media screen and (min-width: 1200px) {
+  section {
+    padding: 10rem 7.5rem;
+  }
+}

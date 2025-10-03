@@ -1,0 +1,13 @@
+.hero {
+  &__container {
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .hero {
+    &__buttons {
+      justify-content: center;
+    }
+  }
+}
