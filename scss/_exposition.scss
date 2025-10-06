@@ -52,6 +52,16 @@
   }
 }
 
+@media screen and (min-width: 700px) {
+  .exposition {
+    &__features {
+      &-col {
+        align-items: center;
+      }
+    }
+  }
+}
+
 @media screen and (min-width: 1000px) {
   .exposition {
     &__container {

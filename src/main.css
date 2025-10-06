@@ -132,6 +132,7 @@ section {
   display: flex;
   flex-direction: column;
   width: 100%;
+  gap: 1.5rem;
 }
 .content-container--vertical {
   flex-direction: column;
@@ -174,11 +175,15 @@ section {
     gap: 1rem;
   }
 }
+.hero__buttons {
+  justify-content: center;
+  align-items: center;
+}
 .hero__container {
   text-align: center;
 }
 
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 700px) {
   .hero__buttons {
     justify-content: center;
   }
@@ -229,6 +234,11 @@ section {
   padding: 0;
 }
 
+@media screen and (min-width: 700px) {
+  .exposition__features-col {
+    align-items: center;
+  }
+}
 @media screen and (min-width: 1000px) {
   .exposition__container {
     gap: 3rem;
@@ -243,6 +253,7 @@ section {
 .process__list {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   gap: 2rem;
 }
 
@@ -273,7 +284,7 @@ section {
   padding: 1.25rem 0;
 }
 
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 700px) {
   .process__list {
     gap: 4rem;
   }
